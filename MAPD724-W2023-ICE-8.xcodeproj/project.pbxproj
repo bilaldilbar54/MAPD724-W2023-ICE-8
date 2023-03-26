@@ -13,6 +13,11 @@
 		85A91D0E29D0C0E300D04148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A91D0C29D0C0E300D04148 /* Main.storyboard */; };
 		85A91D1029D0C0E400D04148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A91D0F29D0C0E400D04148 /* Assets.xcassets */; };
 		85A91D1329D0C0E400D04148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A91D1129D0C0E400D04148 /* LaunchScreen.storyboard */; };
+		85A91D1C29D0C19200D04148 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 85A91D1A29D0C19200D04148 /* MobileNetV2.mlmodel */; };
+		85A91D1D29D0C19200D04148 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 85A91D1B29D0C19200D04148 /* SqueezeNet.mlmodel */; };
+		85A91D2129D0C64D00D04148 /* lion2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85A91D2029D0C64C00D04148 /* lion2.jpg */; };
+		85A91D2329D0C7BF00D04148 /* Tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A91D2229D0C7BF00D04148 /* Tiger.png */; };
+		85A91D2529D0C9DC00D04148 /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A91D2429D0C9DC00D04148 /* Car.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		85A91D0F29D0C0E400D04148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85A91D1229D0C0E400D04148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85A91D1429D0C0E400D04148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A91D1A29D0C19200D04148 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		85A91D1B29D0C19200D04148 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		85A91D2029D0C64C00D04148 /* lion2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion2.jpg; sourceTree = "<group>"; };
+		85A91D2229D0C7BF00D04148 /* Tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tiger.png; sourceTree = "<group>"; };
+		85A91D2429D0C9DC00D04148 /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Car.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +71,13 @@
 				85A91D0A29D0C0E300D04148 /* ViewController.swift */,
 				85A91D0C29D0C0E300D04148 /* Main.storyboard */,
 				85A91D0F29D0C0E400D04148 /* Assets.xcassets */,
+				85A91D2029D0C64C00D04148 /* lion2.jpg */,
 				85A91D1129D0C0E400D04148 /* LaunchScreen.storyboard */,
+				85A91D1A29D0C19200D04148 /* MobileNetV2.mlmodel */,
+				85A91D1B29D0C19200D04148 /* SqueezeNet.mlmodel */,
 				85A91D1429D0C0E400D04148 /* Info.plist */,
+				85A91D2229D0C7BF00D04148 /* Tiger.png */,
+				85A91D2429D0C9DC00D04148 /* Car.png */,
 			);
 			path = "MAPD724-W2023-ICE-8";
 			sourceTree = "<group>";
@@ -127,6 +142,9 @@
 			files = (
 				85A91D1329D0C0E400D04148 /* LaunchScreen.storyboard in Resources */,
 				85A91D1029D0C0E400D04148 /* Assets.xcassets in Resources */,
+				85A91D2529D0C9DC00D04148 /* Car.png in Resources */,
+				85A91D2129D0C64D00D04148 /* lion2.jpg in Resources */,
+				85A91D2329D0C7BF00D04148 /* Tiger.png in Resources */,
 				85A91D0E29D0C0E300D04148 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +158,8 @@
 			files = (
 				85A91D0B29D0C0E300D04148 /* ViewController.swift in Sources */,
 				85A91D0729D0C0E300D04148 /* AppDelegate.swift in Sources */,
+				85A91D1D29D0C19200D04148 /* SqueezeNet.mlmodel in Sources */,
+				85A91D1C29D0C19200D04148 /* MobileNetV2.mlmodel in Sources */,
 				85A91D0929D0C0E300D04148 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,9 +321,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2023-ICE-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +351,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2023-ICE-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
