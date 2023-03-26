@@ -23,6 +23,7 @@ class ViewController: UIViewController
         let imageURL = NSURL.fileURL(withPath: imagePath!)
         
         let modelFile = MobileNetV2()
+        //let modelFile = SqueezeNet()
         let model = try! VNCoreMLModel(for: modelFile.model)
         
         let handler = VNImageRequestHandler(url: imageURL)
